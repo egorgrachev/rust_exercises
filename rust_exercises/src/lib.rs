@@ -7,13 +7,12 @@ pub fn get_last_element_in_array(array: &[i32]) -> Option<i32> {
         Some(&e) => Some(e.clone()),
         None => None,
     }
-    array.last().unwrap().clone()
 }
 
-pub fn get_first_element_in_array(array: &[i32]) -> i32 {
-    if array.len() == 0 {
-        return 0;
+pub fn get_first_element_in_array(array: &[i32]) -> Option<i32> {
+    match array.first() {
+        Some(&e) => Some(e.clone()),
+        None => None,
     }
-    array.first().unwrap().clone()
 }
 

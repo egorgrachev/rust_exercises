@@ -19,8 +19,8 @@ fn test_last_element_in_array() {
 #[test]
 fn test_first_element_in_array() {
     let array = [1, 2, 3];
-    assert_eq!(get_first_element_in_array(&array), 1);
+    assert_eq!(get_first_element_in_array(&array), Some(1));
 
     let empty_array = [];
-    assert_eq!(get_first_element_in_array(&empty_array), 0);
+    assert_eq!(get_first_element_in_array(&empty_array), None);
 }
