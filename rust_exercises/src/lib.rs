@@ -16,3 +16,10 @@ pub fn get_first_element_in_array<T: Copy>(array: &[T]) -> Option<T> {
     }
 }
 
+pub fn get_first_element_in_array(array: &[i32]) -> i32 {
+    if array.len() == 0 {
+        return 0;
+    }
+    array.first().unwrap().clone()
+}
+
